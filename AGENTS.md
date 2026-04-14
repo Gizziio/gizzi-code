@@ -50,9 +50,10 @@ bun run build
 
 ## Warnings
 
-- This repo is **Bun-native**; do not use pnpm/npm here.
-- The 4 internal packages (`@allternit/plugin`, `@allternit/script`, `@allternit/sdk`, `@allternit/util`) are precompiled dist-only.
+- This repo uses Bun workspaces (`packages/*`). Ensure `bun install` is run from the root.
 - Some Nix scripts still reference old naming (`opencode`) — use with caution.
+
+- This repo is **Bun-native**; do not use pnpm/npm here.
 
 ## Related Repos
 
