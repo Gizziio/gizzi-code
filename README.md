@@ -9,12 +9,26 @@
 # macOS / Linux
 curl -fsSL https://install.gizziio.com/install | bash
 
+# Homebrew
+brew tap Gizziio/tap && brew install gizzi-code
+
+# npm (all platforms)
+npm install -g @allternit/gizzi-code
+```
+
+```powershell
 # Windows (PowerShell)
 irm https://install.gizziio.com/install.ps1 | iex
 
-# npm
-npm install -g @allternit/gizzi-code
+# Scoop
+scoop bucket add gizziio https://github.com/Gizziio/scoop-bucket
+scoop install gizzi-code
+
+# winget
+winget install Allternit.GizziCode
 ```
+
+Releases: [`gizzi-code/v*`](https://github.com/Gizziio/allternit-platform/releases) on `Gizziio/allternit-platform`. Docs: [docs.gizziio.com](https://docs.gizziio.com).
 
 ## Quick Start
 
