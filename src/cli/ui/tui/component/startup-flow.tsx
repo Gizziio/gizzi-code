@@ -27,6 +27,7 @@ import { GIZZIBrand } from "@/shared/brand"
 import { Installation } from "@/shared/installation"
 import { Log } from "@/shared/util/log"
 import { Bus } from "@/shared/bus"
+import { ALLTERNIT_PLATFORM_URL } from "@/constants/allternit-auth"
 import { TuiEvent } from "@/cli/ui/tui/event"
 
 const log = Log.create({ service: "startup-flow" })
@@ -388,8 +389,8 @@ export function StartupFlow() {
 
   async function promptPlatformAccount() {
     const value = await DialogPrompt.show(dialog, "Connect Clerk Account", {
-      value: accountURL() || "https://gizzi.io",
-      placeholder: "https://your-platform.example",
+      value: accountURL() || ALLTERNIT_PLATFORM_URL,
+      placeholder: ALLTERNIT_PLATFORM_URL,
       description: () => (
         <box gap={0} flexDirection="column">
           <text fg={theme.textMuted}>Opens browser sign-in with Clerk and waits for callback to this terminal.</text>
