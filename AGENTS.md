@@ -51,7 +51,6 @@ bun run build
 ## Warnings
 
 - This repo uses Bun workspaces (`packages/*`). Ensure `bun install` is run from the root.
-- Some Nix scripts still reference old naming (`opencode`) — use with caution.
 
 - This repo is **Bun-native**; do not use pnpm/npm here.
 

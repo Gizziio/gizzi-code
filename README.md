@@ -65,4 +65,4 @@ gizzi-code --help
 
 ## License
 
-Apache-2.0 — see [LICENSE](LICENSE). Portions derived from opencode (MIT) — see [NOTICE](NOTICE).
+Apache-2.0 — see [LICENSE](LICENSE).
