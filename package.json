@@ -4,15 +4,14 @@
   "name": "@allternit/gizzi-code",
   "description": "AI-powered terminal interface for the Allternit ecosystem",
   "type": "module",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "homepage": "https://docs.gizziio.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Gizziio/allternit-platform.git",
-    "directory": "cmd/gizzi-code"
+    "url": "https://github.com/Gizziio/gizzi-code.git"
   },
   "bugs": {
-    "url": "https://github.com/Gizziio/allternit-platform/issues"
+    "url": "https://github.com/Gizziio/gizzi-code/issues"
   },
   "keywords": [
     "allternitchitect",

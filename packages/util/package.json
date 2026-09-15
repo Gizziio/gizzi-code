@@ -3,7 +3,7 @@
   "name": "@allternit/util",
   "version": "1.0.0",
   "type": "module",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "exports": {
     "./slug": {
       "import": "./dist/slug.js",
