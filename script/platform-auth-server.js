@@ -17,8 +17,11 @@ const ORIGIN = `http://localhost:${PORT}`;
 const TOKEN_ENV = "ALLTERNIT_TOKEN";
 const CLERK_PUBLISHABLE_KEY = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
     ?? "pk_test_ZWFzeS1oYXdrLTUzLmNsZXJrLmFjY291bnRzLmRldiQ";
-const CLERK_SECRET_KEY = process.env.CLERK_SECRET_KEY
-    ?? "REMOVED_CLERK_SECRET";
+const CLERK_SECRET_KEY = process.env.CLERK_SECRET_KEY;
+if (!CLERK_SECRET_KEY) {
+    console.error("CLERK_SECRET_KEY is required (do not hardcode secrets in this script)");
+    process.exit(1);
+}
 // Derive frontend API host from publishable key
 // pk_test_<base64(frontendApiHost)> → decode to get the host
 function clerkFrontendApi() {
